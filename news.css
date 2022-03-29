@@ -1,0 +1,92 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   box-sizing: border-box;
+}
+/*div {
+    border: 1px solid blue This is used for indication purpose of blue, when removed from comment, it shows the width of each columns*/
+
+    body{
+        margin: 0px;
+        background-color:#fbecec;
+    
+    }
+.header{
+background-color: #440047;
+border-bottom: 0.5rem solid #91d18b;
+}
+
+.logo{
+color:#fbecec;
+padding: 1.5rem;
+margin: 0px;
+}
+.footer{
+    /* background-color: rgba(50, 255, 255, 35%); */
+    /* border: 1px solid blue; */
+    clear:both;
+    width: 100%;
+    padding: 1.2rem;
+    background-color:#440047;
+    color:#fbecec
+}
+
+/* In order to stop the float process,we can clear:left or right(we used left) or both to be on a safe side incase the coder intends to change it to right, so the floating get cleared and then the footer is placed in a new line, before this clear, the footer was at,so the footer is not placed in the same div as category.
+
+if you want to change the colums say--weather heading and category, we can use float :right and the clear right, but to be on a safe side use clear:both..this is a key ppty when defining a page layout*/
+
+.category-column{
+ width: 25%;
+ /* background-color: rgba(255, 50, 50, 35%); */
+  float: left; 
+  padding: 1.2rem;
+}
+
+/*FLOAT: This is an important ppty that helps you in the page layoutthis places an element to the left-most(rightmost side) and allows other element to follow that.*/
+
+.headlines-column{
+width:50%;
+/* background-color: rgba(50, 255, 50, 35%); */
+padding:  1.2rem;
+
+float: left; 
+}
+/* the float ppty is just to place the columns in a single row adjacent to each other, when float of headlines and wearther are commented, using border:1px solid blue in both headelines and weather, you will see the the border is starting from the beginiig of the LHS(sames for RHS).If the second item doesnt have a float it makes the div to start from the beginning ie category, but when we uncomment the float in headlines, you will see that the entire element, is on its own and has moved after the category div 
+
+when the float is also uncommented for the weather it starts from the category div also using border:, you will see that,you uncomment it and it stays on its own. becoz the border, it adds 2px to gthe LHS and RHS so it can"t move up, so we have to comment border.*/
+
+.weather-column{
+width:25%;
+/* background-color: rgba(50, 50, 255, 35%); */
+/* border: 1px solid blue; */
+float: left;
+padding: 1.2rem;
+}
+
+.heading{
+    color: #e11d74;
+    margin: 1.2rem;
+}
+
+.content{
+    border:0.1rem solid #91d18b;
+    border-radius:0.4rem;
+    /* padding-left: 1.2rem; */
+    /* padding-right: 1.2rem; */
+    
+}
+.news-title, .category-item{
+    /* padding-top: 0.6rem; */
+    /* padding-bottom: 0.6rem; */
+   color: #440047;
+   margin: 1.2rem;
+}
+.weather-degree{
+    text-align: center;
+    color: #91d188;
+    font-size:6rem ;
+}
+.news-title:hover{
+    color:#e11d74;
+    cursor:pointer;
+    text-decoration: underline;
+}
